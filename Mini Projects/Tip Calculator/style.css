@@ -1,0 +1,13 @@
+.calculate{
+    padding: 1px;
+    margin: 107px;
+    position: relative;
+    top: 56px;
+}
+body{
+    background-color: aqua;
+}
+.result{
+    width: 374px; 
+    height:auto;
+} 

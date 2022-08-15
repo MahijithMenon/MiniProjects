@@ -1,0 +1,52 @@
+.calculator{
+    background-color: aquamarine;
+    width: 299px;
+    height: 307px;
+    /* display: flex; */
+    position: relative;
+    top: 49px;
+    left: 123px;
+}
+textarea{
+    width: 98%;
+    height: 5em;
+}
+input[type="button"]{
+    width: 31%;
+    height: 1.5em;
+    margin: 2px;
+}
+.operators{
+    margin: 50px;
+    display: flex;
+}
+.bt1{
+    position: relative;
+    top: 1px;
+    right: 31px;
+}
+.bt2{
+    position: relative;
+    top: 1px;
+    right: -109px;
+}
+.bt3{
+    position: relative;
+    top: 34px;
+    right: 109px;
+}
+.bt4{
+    position: relative;
+    top: 33px;
+    right: -10px;
+}
+.bt4{
+    position: relative;
+    top: 33px;
+    right: -30px;
+}
+.bt5{
+    position: relative;
+    top: 15px;
+    right: 95px;
+}
