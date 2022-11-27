@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp Message</title>
+    <style>
+        .box{
+            display: inline-block;
+            width: 181px;
+            vertical-align: middle;
+            margin: 1px;
+        }
+        .box2{
+            display: inline-block;
+            vertical-align: middle;
+    
+        }
+        .btn{
+            display:inline-block;
+        }
+        textarea{
+            width: 550px;
+            height: 200px;
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <input class="btn" type="button" value="Click Me" onclick="display('Hello World!!!')">
+        <input class="btn" type="button" value="JavaScript" onclick="display('JS is fun')">
+        <input class="btn" type="button" value="Click Me 2" onclick="display('Hello World2!!!')">
+    </div>
+    <div class="box2">
+        <textarea id="result" class="hide" disabled></textarea>
+        <input type="button" value="Close" onclick="clearName()">
+</div>
+    <script>
+        function display(name){
+            document.getElementById('result').classList.remove('hide');
+            // document.getElementById('result').style.visibility = 'visible';
+            // document.getElementById('result').removeAttribute("hidden");
+            document.getElementById('result').innerHTML=name;
+            console.log('0');
+        }
+        function clearName(){
+            // document.getElementById('result').style.visibility = 'hidden';
+            console.log('1');
+            document.getElementById('result').classList.add('hide');
+        }
+    </script>
+</body>
+</html>
