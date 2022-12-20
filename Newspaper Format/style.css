@@ -1,0 +1,66 @@
+h1{
+    text-align: center;
+}
+.nav-head{
+   list-style: none;
+   grid-area: nav-head;
+}
+.nav-head li{
+    display: inline;
+    padding: 0 10px;
+   list-style: none;
+   margin: 80px;
+   
+}
+.page{
+    border: 2px solid black;
+    display: grid;
+    grid-template-areas: "nav-head nav-head nav-head"
+                            "story1 story2 story3"
+                            "story4 story5 story5";
+}
+.story1{
+    text-align: justify-start;
+    grid-area: story1;
+    border: 2px solid black;
+    border-left: 0;
+    border-bottom: 0;
+}
+.story2{
+    text-align: justify-start;
+    grid-area: story2;
+    border: 2px solid black;
+    border-left: 0;
+    border-bottom: 0;
+
+}
+.story2 img{
+width: 50%;
+justify-content: center;
+margin-left: 90px;
+/* margin-right: auto; */
+}
+.story3{
+    text-align: justify-start;
+    grid-area: story3;
+    border-top: 2px solid black;
+}
+.story4{
+    ttext-align: justify-start;
+    grid-area: story4;
+    border-top: 2px solid black;
+}
+.story5{
+    text-align: justify-start;
+    grid-area: story5;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    /* margin: 10px 10px; */
+}
+h3{
+    text-align: center;
+}
+/* .paper{
+    width: 50%;
+    height: 55%;
+} */
