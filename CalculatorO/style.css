@@ -1,0 +1,29 @@
+.calc{
+    background-color: black;
+    width: 30vw;
+    height:50vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.calc-buttons{
+ padding: 10%;   
+}
+.calc-button-row{
+    height: 8vh;
+    padding: 0;
+    margin:0;
+}
+.calc-button{
+    height: 100%;
+    width: 5vw;
+}
+.double{
+    height: 100%;
+    width: 10.5vw;
+}
+.triple{
+    height: 100%;
+    width: 15.5vw;
+}
