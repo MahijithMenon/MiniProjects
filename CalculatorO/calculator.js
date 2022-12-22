@@ -3,7 +3,7 @@ screen=document.querySelector('.screen');
 btn=document.querySelector('.calc-buttons');
 let buffer='0';
 let total=0;
-let previousOperator="";
+let previousOperator=null;
 console.log(screen)
 // for(i=0;i<btn.length;i++){
 btn.addEventListener('click',function(event){
@@ -49,8 +49,14 @@ function Symbols(value){
                 MathOperation(value); 
             break;
             case'=':
-            console.log(total)
-            screen.innerText=total;
+            if(previousOperator==null){
+                return;
+            }
+            flushOperation(parseInt(buffer));
+            previousOperator=null;
+            buffer=total;
+            total=0;
+            screen.innerText=buffer;
             break;
     }
     // buffer+=value;
@@ -70,8 +76,8 @@ else{
 }
 previousOperator=value;
 buffer='0';
-console.log(total);
-console.log(value);
+// console.log(total);
+// console.log(value);
 }
 function flushOperation(intBuffer){
 switch(previousOperator){
