@@ -1,0 +1,23 @@
+.middle{
+    text-align: center;
+}
+.scoreboard{
+    /* border: 2px solid black; */
+    /* height: 50vh;
+    weight:30vw; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0;
+}
+.scoreboardletter{
+  border: 2px solid black; 
+  width: 10vh; 
+  height: 10vh; 
+  margin: 3px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
