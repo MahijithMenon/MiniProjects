@@ -4,7 +4,9 @@ const loading=document.getElementsByClassName('.info');
 const ANSWER_LENGTH=5;
 async function init(){
     const res= await fetch('https://words.dev-apis.com/word-of-the-day');
-    const {word}=await res.json().toUpperCase();
+    let {word}=await res.json()
+    word=word.toUpperCase();
+    console.log(word);
     let currentGuess='';
     let currentRow=0;
 document.addEventListener('keydown',function handleKeypress(event){
